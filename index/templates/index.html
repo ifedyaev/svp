@@ -58,8 +58,37 @@
             background-color: gainsboro;
         }
 
-        a:hover{
+        a:hover {
             text-decoration: none;
+        }
+
+        .all_title {
+            font-size: 2rem;
+        }
+
+        .all_paragraph {
+            font-size: 1.2rem;
+        }
+
+        .path {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .carousel-item {
+            height: 20rem;
+            background-color: #777;
+        }
+
+        .carousel-item > img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            height: 20rem;
+        }
+
+        .bl {
+            background-color: rgba(255, 255, 255, 0.2);
         }
 
         /*END Global settings*/
@@ -69,7 +98,7 @@
         /*Icons settings*/
 
         .fa-heart {
-            color: red
+            color: red;
         }
 
         .fa-home {
@@ -96,9 +125,29 @@
         }
 
         #greeting__text__title {
-            font-family: "esenin-script", Arial;
-            font-size: 2rem;
             padding-top: 20px;
+        }
+
+        #greeting_welcome {
+            font-family: "esenin-script", Arial;
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        #greeting__text__dear {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            margin-top: 50px;
+        }
+
+        #greeting__text__time {
+            margin-top: 30px;
+            font-size: 2.7rem;
+            font-family: "esenin-script", Arial;
+        }
+
+        #greeting__text__celeb, #greeting__text__see {
+            font-size: 1.5rem;
         }
 
         /*END greeting settings*/
@@ -124,18 +173,39 @@
             padding: 0;
         }
 
+        #plan_of_measures__title {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
         /*END plan_of_measures settings*/
         /*====================================================================*/
         /*====================================================================*/
 
         /*place_of_registration settings*/
-        /* todo сделать картинки одного размера для карусели */
         #place_of_registration {
             margin-top: 40px;
         }
 
         #accordion:hover {
             text-decoration: none;
+        }
+
+        #place_of_registration__time {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        #place_of_registration__time__time {
+            font-size: 2rem;
+        }
+
+        #place_of_registration__path {
+            margin-top: 20px;
+        }
+
+        #place_of_registration__path__title {
+            margin-bottom: 40px;
         }
 
         /*END place_of_registration settings*/
@@ -176,11 +246,43 @@
 
         #host_man__contact {
             margin-top: 10px;
+            margin-bottom: 30px;
         }
 
         #logo_briton {
             max-height: 100px;
             max-width: 100px;
+        }
+
+        .list-group .active {
+        {#background-color: #F5F5F5;#}{#color: black;#}{#border-color: #A9A9A9;#} font-size: 1.3rem;
+        }
+
+        #celebrate__path {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #celebrate__path__map__text {
+            margin-top: 20px;
+        }
+
+        #place_man {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        #celebrate .list-group-item {
+            font-size: 1.2rem;
+        }
+
+        #celebrate__path__title {
+            margin-bottom: 10px;
+        }
+
+        #celebrate .list-group {
+            margin-top: 5px;
+            margin-bottom: 5px;
         }
 
         /*END furshet settings*/
@@ -192,11 +294,68 @@
             .h3 {
                 font-size: 1.2rem;
             }
+
+            #greeting_welcome {
+                font-size: 3rem;
+            }
+
+            #greeting__text__dear {
+                font-size: 1.8rem;
+            }
+
+            .all_title {
+                font-size: 1.6rem;
+            }
+
+            .carousel-item {
+                height: 15rem;
+            }
+
+            .carousel-item > img {
+                height: 15rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+
         }
 
         /*END media settings*/
         /*====================================================================*/
 
+        /*====================================================================*/
+        /*photo_session settings*/
+        .logo-title, .logo-subtitle-i-first-letter, .logo-subtitle-ii-first-letter {
+            color: darkorange;
+        }
+
+        .logo {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        #photo_session__ostancino {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        #photo_session__place {
+            margin-bottom: 10px;
+        }
+
+        .list-group {
+            margin: 0;
+            padding: 0;
+        }
+
+        #photo_session__path__title {
+            margin-top: 10px;
+        }
+
+        /*END photo_session settings*/
+        /*====================================================================*/
+
+        /*====================================================================*/
+        /*footer settings*/
         #footer {
             margin-top: 10px;
             background-color: white;
@@ -205,6 +364,14 @@
         #footer__item {
             font-size: 2rem;
         }
+
+        /*END footer settings*/
+        /*====================================================================*/
+
+        /*====================================================================*/
+        /*media settings*/
+        /*END media settings*/
+        /*====================================================================*/
 
 
     </style>
@@ -259,7 +426,7 @@
 
 <main class="container text-center" id="main">
 
-    <div class="greeting" id="greeting">
+    <div class="bl greeting" id="greeting">
 
         <div class="text-center">
 
@@ -268,21 +435,21 @@
                     <div class="h1">
                         <i class="fa fa-heart"></i>
                     </div>
-                    <div class="h1" style="margin-bottom: 20px;">
+                    <div class="h1" id="greeting_welcome">
                         Приглашение
                         на свадьбу
                         <br>
-                        Игоря и Ольги
+                        Игоря иОльги
                     </div>
-                    <div class="h3 text_standard ">
-                        Дорогие гости!
-                        <p style="margin-top: 10px;"> Близится день нашей Свадьбы, и мы с радостью
-                            приглашаем Вас разделить с нами этот чудесный миг.</p>
+                    <div class="h4 text_standard">
+                        <div class="h3" id="greeting__text__dear">
+                            Дорогие гости!
+                        </div>
+                        <p class="d-flex col-lg-10 text-center mx-auto" id="greeting__text__celeb">
+                            Близится день нашей Свадьбы, и мы с радостью
+                            приглашаем Вас на наш праздник!</p>
                     </div>
-                    <div class="h3 text_standard">
-                        Будем очень рады видеть вас в этот чудесный день
-                    </div>
-                    <div class="h3 text_standard" style="margin-top: 20px;">
+                    <div class="h3 text_standard" id="greeting__text__time">
                         До церемонии бракосочетания осталось:
                     </div>
                 </div>
@@ -296,27 +463,27 @@
 
     </div>
 
-    <div class="plan_of_measures" id="plan_of_measures">
+    <div class="bl plan_of_measures" id="plan_of_measures">
         <div class="text-center">
             <div class="h1">
                 <i class="fa fa-list"></i>
             </div>
-            <h4 class="cover-heading" style="margin-bottom: 10px;">
+            <h4 class="cover-heading all_title" id="plan_of_measures__title">
                 План мероприятия
             </h4>
 
             <div class="d-flex justify-content-center">
-                <div class="list-group list-group-flush col-lg-8 col-sm-10">
+                <div class="list-group list-group-flush col-lg-8 col-sm-10 all_paragraph">
                     <a href="#place_of_registration" class="list-group-item list-group-item-action">
                         Регистрация брака
                     </a>
-                    <a href="#photo_session" class="list-group-item list-group-item-action">
-                        Фотосессия c молодожеными
+                    <a href="#photo_session" class="list-group-item list-group-item-action all_paragraph">
+                        Фотосессия c молодожёнами
                     </a>
-                    <a href="#transfer" class="list-group-item list-group-item-action">
+                    <a href="#transfer" class="list-group-item list-group-item-action all_paragraph">
                         Трансфер до места празднования
                     </a>
-                    <a href="#celebrate" class="list-group-item list-group-item-action">
+                    <a href="#celebrate" class="list-group-item list-group-item-action all_paragraph">
                         Праздование в отеле "Брайтон"
                     </a>
                 </div>
@@ -325,18 +492,19 @@
         </div>
     </div>
 
-    <div class="place_of_registration" id="place_of_registration">
+    <div class="bl place_of_registration" id="place_of_registration">
 
         <div class="h1">
             <i class="fa fa-dove"></i>
         </div>
 
-        <h4 class="cover-heading">Место регистрации</h4>
+        <h4 class="cover-heading all_title">
+            Место регистрации
+        </h4>
 
-        <p class="lead">
+        <p class="lead all_paragraph">
             Хамовнический отдел ЗАГС Москвы
         </p>
-
 
         <div class="d-flex justify-content-center">
 
@@ -375,42 +543,41 @@
 
         </div>
 
-        <div class="row">
+        <div class="row" id="place_of_registration__time">
             <div class="col-12">
                 <div class="text-center">
-                    <div class="h3">
-                        Время регистрации:
+                    <div class="h3 all_title" id="place_of_registration__time__text">
+                        Время регистрации
                     </div>
-                    <div class="h2">
-                        10:40
+                    <div class="h2" id="place_of_registration__time__time">
+                        <b>10:40</b>
                     </div>
                 </div>
             </div>
 
         </div>
 
-
         <div class="d-flex justify-content-center">
-            <div class="col-lg-8 col-12">
+            <div class="col-lg-6 col-md-8 col-sm-10 col-12">
                 <div id="imag_hamov" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#imag_hamov" data-slide-to="0" class="active"></li>
                         <li data-target="#imag_hamov" data-slide-to="1"></li>
                         <li data-target="#imag_hamov" data-slide-to="2"></li>
-                        <li data-target="#imag_hamov" data-slide-to="3"></li>
                     </ol>
                     <div class="carousel-inner" role="listbox">
+
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="../static/img/Hamov_001.jpeg" alt="Первый слайд">
+                            <img class="d-block img-fluid img-thumbnail" src="../static/img/Hamov_001.jpg"
+                                 alt="Первый слайд">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="../static/img/Hamov_002.jpg" alt="Второй слайд">
+                            <img class="d-block img-fluid img-thumbnail" src="../static/img/Hamov_002.jpg"
+                                 alt="Второй слайд">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="../static/img/Hamov_003.jpeg" alt="Третий слайд">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block img-fluid" src="../static/img/Hamov_004.jpeg" alt="Четвертый слайд">
+                            <img class="d-block img-fluid img-thumbnail" src="../static/img/Hamov_003.jpeg"
+                                 alt="Третий слайд">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#imag_hamov" role="button" data-slide="prev">
@@ -423,24 +590,20 @@
                     </a>
                 </div>
             </div>
-
-
         </div>
 
-
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center" id="place_of_registration__path">
             <div class="col-10 col-lg-8">
-                <b>Адрес и проезд:</b>
+                <b class="all_paragraph">Адрес и проезд</b>
                 <br>
-                <p>
+                <p class="path all_paragraph">
                     119121, 1-ый Вражский пер., д.4
                     метро «Киевская», выход в сторону гостиницы «Славянская»,
                     переход по стеклянному пешеходному мосту на другую сторону реки
                 </p>
 
                 <br>
-                <b>Местоположение</b>
-                </p>
+                <p><b class="all_paragraph" id="place_of_registration__path__title">Месторасположение</b></p>
                 <script type="text/javascript" charset="utf-8" async
                         src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0caca1932f683d498c627d889a10525cc0384123c50ca2aaebab4c3d21da8a2d&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true">
                 </script>
@@ -450,60 +613,109 @@
 
     </div>
 
-    <div class="photo_session" id="photo_session">
+    <div class="bl photo_session" id="photo_session">
         <div class="h1">
             <i class="fa fa-camera-retro"></i>
         </div>
 
-        <div class="row">
-            <div class="col-12">
-                <div class="text-center">
-                    <h4 class="cover-heading">Фотосессия</h4>
-                    <div class="h3">
-                        Данный контент еще находится в обсуждении, следите за обновлением!
-                    </div>
+
+        <div class="text-center">
+            <h4 class="cover-heading all_title">Фотосессия</h4>
+            <h3 class="all_paragraph">
+                Фотосьемка
+            </h3>
+        </div>
+
+        <div class="col-lg-4 col-10 mx-auto" id="photo_session__ostancino">
+                <div class="logo">
+                    <a class="logo-link">
+                        <div class="logo-title">
+                            Ostankino
+                        </div>
+                        <div class="logo-subtitle">
+                                    <span class="logo-subtitle-i">
+                                    <span class="logo-subtitle-i-first-letter">E</span>ntertainment
+                                    </span>
+                            <span class="logo-subtitle-ii">
+                                    <span class="logo-subtitle-ii-first-letter">C</span>enter
+                                    </span>
+                        </div>
+                    </a>
+                </div>
+
+        </div>
+
+        <div class="text-center" id="photo_session__place">
+            <h3 class="all_paragraph">
+                Места для фотосессии
+            </h3>
+            <div class="d-flex justify-content-center">
+                <div class="list-group list-group-flush col-lg-8 col-sm-10 all_paragraph">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        Москва Сити
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action all_paragraph">
+                        Красная Площадь
+                    </a>
+                    <a href="https://www.hortus.ru/" class="list-group-item list-group-item-action all_paragraph">
+                        Ботанический сад МГУ имени М. В. Ломоносова
+                        «АПТЕКАРСКИЙ ОГОРОД»
+                    </a>
                 </div>
             </div>
         </div>
 
+        <div class="d-flex justify-content-center" id="photo_session__path">
+
+            <div class="col-10 col-lg-8">
+                <div class="text-center">
+                    <p id="photo_session__path__title"><b class="all_paragraph">Месторасположение</b></p>
+                </div>
+                <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aed55218e7f0d70c9eef4b089218562d9dc266041cc63e180e27e3ce1d62701d6&amp;width=100%25&amp;height=475&amp;lang=ru_RU&amp;scroll=true">
+
+                </script>
+            </div>
+        </div>
+
+
     </div>
 
-    <div class="transfer" id="transfer">
+    <div class="bl transfer" id="transfer">
         <div class="h1">
             <i class="fa fa-shuttle-van"></i>
         </div>
-        <div class="row">
-            <div class="col-12">
+        <div class="d-flex ">
+            <div class="col-10 mx-auto">
                 <div class="text-center">
-                    <h4 class="cover-heading">Трансфер до места проведения банкета</h4>
-                    <div class="h3">
-                        Данный контент еще находится в обсуждении, следите за обновлением!
-                    </div>
+                    <h4 class="cover-heading all_title">Трансфер до места проведения банкета</h4>
+                    <p class="all_paragraph">
+                        Будет организован трансфер от ЗАГСа до мест фотосессии и до ресторана
+                    </p>
                 </div>
             </div>
         </div>
 
     </div>
 
-    <div class="celebrate" id="celebrate">
+    <div class="bl celebrate" id="celebrate">
         <div class="h1">
             <i class="fa fa-glass-martini"></i>
 
-            <h4 class="cover-heading">Празднование</h4>
+            <h4 class="cover-heading all_title">Празднование</h4>
         </div>
-        <div class="h3">
+        <div class="h3 all_paragraph">
             Место проведения
         </div>
         <p class="lead">
             <a href="http://www.brh.ru">
-                <img src="http://www.brh.ru/sites/all/themes/brighton_3/images/logo.svg"
+                <img src="../static/img/logo_brighton.svg"
                      class="img-fluid rounded"
                      id="logo_briton">
             </a>
-
         </p>
 
-        <div class="h3">
+        <div class="h3 all_paragraph">
             Отель Брайтон
         </div>
 
@@ -531,16 +743,6 @@
                                 универсальным фоном для воплощения любых ярких идей.
 
                                 Единое пространство без колонн позволяет вместить до 60 гостей при банкетной рассадке.
-
-                                Приглашаем будущих молодоженов рассмотреть банкетный зал для свадьбы на 60 человек в
-                                нашем
-                                ресторане. Это торжественная, оформленная в благородных, сдержанных тонах банкетная
-                                площадка
-                                в европейском стиле, площадью 72 кв.м. Здесь мы организуем классические банкеты для
-                                юбиляров, романтические свадьбы, корпоративы с развлекательной программой и любые другие
-                                праздники.
-                                <p class="text-center">Максимальная вместимость: Банкет - до 60 чел Фуршет – до 80
-                                    чел</p>
                                 <p class="text-center">Площадь: 72 кв.м</p>
                             </div>
                         </div>
@@ -548,30 +750,22 @@
                 </div>
 
                 <div class="d-flex justify-content-center">
-                    <div class="col-lg-8 col-12">
+                    <div class="col-lg-6 col-md-8 col-sm-10 col-12">
                         <div id="imag_brighton" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#imag_brighton" data-slide-to="0" class="active"></li>
                                 <li data-target="#imag_brighton" data-slide-to="1"></li>
                                 <li data-target="#imag_brighton" data-slide-to="2"></li>
-                                <li data-target="#imag_brighton" data-slide-to="3"></li>
-                                <li data-target="#imag_brighton" data-slide-to="4"></li>
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block img-fluid" src="../static/img/Brighton_001.jpg">
+                                    <img class="d-block img-fluid img-thumbnail" src="../static/img/Brighton_001.jpg">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block img-fluid" src="../static/img/Brighton_002.jpg">
+                                    <img class="d-block img-fluid img-thumbnail" src="../static/img/Brighton_002.jpg">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block img-fluid" src="../static/img/Brighton_003.jpg">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block img-fluid" src="../static/img/Brighton_004.jpg">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block img-fluid" src="../static/img/Brighton_004.jpg">
+                                    <img class="d-block img-fluid img-thumbnail" src="../static/img/Brighton_003.jpg">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#imag_brighton" role="button" data-slide="prev">
@@ -587,15 +781,17 @@
                 </div>
 
 
-                <b id="host_man">Ведущий торжества</b>
+                <p class="all_paragraph" id="host_man">
+                    <b>Ведущий торжества</b>
+                </p>
 
-                <p>Сергей Харламов</p>
+                <p class="all_paragraph">Сергей Харламов</p>
 
 
                 <div class="row">
                     <div class="d-flex justify-content-center" id="host_man__img">
                         <div class="col-8 col-sm-6 col-md-4">
-                            <img src="https://pp.userapi.com/c639231/v639231419/522d6/byDKVmvcEvI.jpg"
+                            <img src="../static/img/host_man.jpg"
                                  class="img-fluid">
                             <a href="https://vk.com/pisa_tell" type="button" class="btn-floating btn-lg btn-vk"
                                id="host_man__contact"><i
@@ -611,19 +807,99 @@
 
                 </div>
 
+                <p class="all_paragraph" id="place_man">Рассадка гостей</p>
+                <div class="d-flex justify-content-center">
+
+                    <div class="row col-md-12 col-lg-10">
+                        <div class="col-sm-6">
+                            <ul class="list-group">
+                                <li class="list-group-item active">Стол 1</li>
+                                <li class="list-group-item">Федяев Андрей Викторович</li>
+                                <li class="list-group-item">Федяева Алина Рифорвна</li>
+                                <li class="list-group-item">Галкина Наталья Николаевна</li>
+                                <li class="list-group-item">Галкин Александр Александрович</li>
+                                <li class="list-group-item">Ковалёв Юрий</li>
+                                <li class="list-group-item">Ковалёва Наталья</li>
+                                <li class="list-group-item">Мухутдинова Лена</li>
+                                <li class="list-group-item">Мухутдинова Нафиса</li>
+                                <li class="list-group-item">Галкин Владимир</li>
+                                <li class="list-group-item">Галкина Татьяна</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-group">
+                                <li class="list-group-item active">Стол 2</li>
+                                <li class="list-group-item">Галкина Галина</li>
+                                <li class="list-group-item">Кульков Егор</li>
+                                <li class="list-group-item">Федяев Алексей</li>
+                                <li class="list-group-item">Коровина Юлия</li>
+                                <li class="list-group-item">Семыкин Александр</li>
+                                <li class="list-group-item">Семыкина Екатерина</li>
+                                <li class="list-group-item">Виноградов Антон</li>
+                                <li class="list-group-item">Свиридова Гуля</li>
+                                <li class="list-group-item">Ганцев Эдуард</li>
+                                <li class="list-group-item">Мухутдинова Нейля</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-group">
+                                <li class="list-group-item active">Стол 3</li>
+                                <li class="list-group-item">Галкин Сергей</li>
+                                <li class="list-group-item">Галкина Алёна</li>
+                                <li class="list-group-item">Галкин  Александр</li>
+                                <li class="list-group-item">Алина</li>
+                                <li class="list-group-item">Галкин Роман</li>
+                                <li class="list-group-item">Галкина Анна</li>
+                                <li class="list-group-item">Гордеева Вера</li>
+                                <li class="list-group-item">Гимазова Регина</li>
+                                <li class="list-group-item">Махоткин Алесей</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-group">
+                                <li class="list-group-item active">Стол 4</li>
+                                <li class="list-group-item">Баскакова Алиса</li>
+                                <li class="list-group-item">Алексеев Дмитрий</li>
+                                <li class="list-group-item">Ветлова Алина</li>
+                                <li class="list-group-item">Винницкий Михаил</li>
+                                <li class="list-group-item">Ракина Анастасия</li>
+                                <li class="list-group-item">Шайхлисламова Эльза</li>
+                                <li class="list-group-item">Владимирова Анастасия</li>
+                                <li class="list-group-item">Пасторов Дмитрий</li>
+                                <li class="list-group-item">Щенин Максим</li>
+                                <li class="list-group-item">Ахтямов Руслан</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-group">
+                                <li class="list-group-item active">Стол 5</li>
+                                <li class="list-group-item">Анечка</li>
+                                <li class="list-group-item">Арсений</li>
+                                <li class="list-group-item">Яна</li>
+                                <li class="list-group-item">Раиль</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
 
                 <div class="d-flex justify-content-center">
                     <div class="col-10 col-lg-8">
-                        <br>
-                        <b>Адрес и проезд:</b>
-                        <br>
-                        <p>
+
+                        <p id="celebrate__path">
+                            <b class="all_paragraph">
+                                Адрес и проезд
+                            </b>
+                        </p>
+
+                        <p class="all_paragraph path" id="celebrate__path__map__text">
                             г. Москва, Петровско-Разумовский
                             проезд, дом 29
                         </p>
 
-                        <br>
-                        <b>Местороложение</b>
+                        <p id="celebrate__path__title"><b class="all_paragraph">Месторасположение</b></p>
                         <script type="text/javascript" charset="utf-8" async
                                 src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afd88a266aedd172449c13423bbdbf5f3e4602dc996a46df0dc1ed5626bbceddb&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true">
                         </script>
@@ -660,7 +936,12 @@
                             <p><i class="fa fa-envelope mr-3"></i>lichcs@mail.ru</p>
                         </li>
                         <li class="list-inline-item">
-                            <i class="fa fa-phone mr-3"></i><a href="tel:+79255798567"> +7-(925)-57-98-567</a></p>
+                            <p>
+                                <i class="fa fa-phone mr-3"></i>
+                                <a href="tel:+79255798567">
+                                    +79255798567
+                                </a>
+                            </p>
                         </li>
                     </ul>
                 </div>
