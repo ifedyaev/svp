@@ -11,364 +11,35 @@
     <title>28.07.2018 Игорь & Ольга</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
 
     <!-- Font Awesome -->
 
-    <link rel="stylesheet" href="../static/css/all.css">
+    <link rel="stylesheet" href="static/css/all.css">
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT&amp;subset=cyrillic" rel="stylesheet">
 
-    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="static/css/main.css">
 
     <!-- jQuery -->
-    <script src="../static/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="static/js/jquery-3.3.1.slim.min.js"></script>
     <!-- Bootstrap js -->
-    <script src="../static/js/bootstrap.min.js"></script>
-
+    <script src="static/js/bootstrap.min.js"></script>
     <style>
-        /*====================================================================*/
-        /*Global settings*/
-        body {
-            background: url("../static/img/tsvety-piony-butony.jpg") #303030 no-repeat center center fixed;
-            display: table;
-            height: 100%;
-            width: 100%;
-            position: relative;
-            background-size: cover;
-        }
-
-        .text_standard {
-            font-family: 'Old Standard TT', serif;
-        }
-
-        .btn {
-            background-color: ghostwhite;
-            color: black;
-        }
-
-        .btn:hover {
-            color: black;
-            background-color: gainsboro;
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
-
-        .all_title {
-            font-size: 2rem;
-        }
-
-        .all_paragraph {
-            font-size: 1.2rem;
-        }
-
-        .path {
-            background-color: rgba(255, 255, 255, 0.3);
-        }
-
-        .carousel-item {
-            height: 20rem;
-            background-color: #777;
-        }
-
-        .carousel-item > img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            min-width: 100%;
-            height: 20rem;
-        }
-
-        .bl {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-
-        /*END Global settings*/
-        /*====================================================================*/
-        /*====================================================================*/
-
-        /*Icons settings*/
-
-        .fa-heart {
-            color: red;
-        }
-
-        .fa-home {
-            font-size: 1.5rem
-        }
-
-        .fa-dove {
-            color: #4682B4;
-        }
-
-        /*END Icons settings*/
-        /*====================================================================*/
-        /*====================================================================*/
-
-        /*Nav settings*/
-
-        /*END Nav settings*/
-        /*====================================================================*/
-        /*====================================================================*/
-
-        /*greeting settings*/
-        #greeting {
-            margin-top: 60px;
-        }
-
-        #greeting__text__title {
-            padding-top: 20px;
-        }
-
-        #greeting_welcome {
-            font-family: "esenin-script", Arial;
-            font-size: 4rem;
-            margin-bottom: 20px;
-        }
-
-        #greeting__text__dear {
-            margin-bottom: 20px;
-            font-size: 2rem;
-            margin-top: 50px;
-        }
-
-        #greeting__text__time {
-            margin-top: 30px;
-            font-size: 2.7rem;
-            font-family: "esenin-script", Arial;
-        }
-
-        #greeting__text__celeb, #greeting__text__see {
-            font-size: 1.5rem;
-        }
-
-        /*END greeting settings*/
-        /*====================================================================*/
-        /*====================================================================*/
-
-        /*Font import*/
-        @font-face {
+         body {
+             background: url("static/img/tsvety-piony-butony.jpg") #303030 no-repeat center center fixed;
+             display: table;
+             height: 100%;
+             width: 100%;
+             position: relative;
+             background-size: cover;
+         }
+         @font-face {
             font-family: esenin-script;
-            src: url('../static/font/esenin-script-two_[allfont.ru].ttf') format('truetype');
+            src: url('static/font/esenin-script-two_[allfont.ru].ttf') format('truetype');
         }
-
-        /*END Font import*/
-        /*====================================================================*/
-        /*====================================================================*/
-
-        /*plan_of_measures settings*/
-        #plan_of_measures {
-            margin-top: 40px;
-        }
-
-        #plan_of_measures .list-group {
-            padding: 0;
-        }
-
-        #plan_of_measures__title {
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
-
-        /*END plan_of_measures settings*/
-        /*====================================================================*/
-        /*====================================================================*/
-
-        /*place_of_registration settings*/
-        #place_of_registration {
-            margin-top: 40px;
-        }
-
-        #accordion:hover {
-            text-decoration: none;
-        }
-
-        #place_of_registration__time {
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-
-        #place_of_registration__time__time {
-            font-size: 2rem;
-        }
-
-        #place_of_registration__path {
-            margin-top: 20px;
-        }
-
-        #place_of_registration__path__title {
-            margin-bottom: 40px;
-        }
-
-        /*END place_of_registration settings*/
-        /*====================================================================*/
-        /*====================================================================*/
-        /*photo_session settings*/
-        #photo_session {
-            margin-top: 40px;
-        }
-
-        /*END photo_session settings*/
-        /*====================================================================*/
-        /*====================================================================*/
-        /*transfer settings*/
-        #transfer {
-            margin-top: 40px;
-        }
-
-        /*END transfer settings*/
-        /*====================================================================*/
-        /*====================================================================*/
-        /*celebrate settings*/
-        #celebrate {
-            margin-top: 40px;
-        }
-
-        #europe_zal__text {
-            margin-bottom: 20px;
-        }
-
-        #host_man {
-            margin-top: 20px;
-        }
-
-        #host_man__img {
-            margin-top: 5px;
-        }
-
-        #host_man__contact {
-            margin-top: 10px;
-            margin-bottom: 30px;
-        }
-
-        #logo_briton {
-            max-height: 100px;
-            max-width: 100px;
-        }
-
-        .list-group .active {
-        {#background-color: #F5F5F5;#}{#color: black;#}{#border-color: #A9A9A9;#} font-size: 1.3rem;
-        }
-
-        #celebrate__path {
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
-        #celebrate__path__map__text {
-            margin-top: 20px;
-        }
-
-        #place_man {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        #celebrate .list-group-item {
-            font-size: 1.2rem;
-        }
-
-        #celebrate__path__title {
-            margin-bottom: 10px;
-        }
-
-        #celebrate .list-group {
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
-
-        /*END furshet settings*/
-        /*====================================================================*/
-        /*====================================================================*/
-        /*media settings*/
-
-        @media (max-width: 576px) {
-            .h3 {
-                font-size: 1.2rem;
-            }
-
-            #greeting_welcome {
-                font-size: 3rem;
-            }
-
-            #greeting__text__dear {
-                font-size: 1.8rem;
-            }
-
-            .all_title {
-                font-size: 1.6rem;
-            }
-
-            .carousel-item {
-                height: 15rem;
-            }
-
-            .carousel-item > img {
-                height: 15rem;
-            }
-        }
-
-        @media (max-width: 576px) {
-
-        }
-
-        /*END media settings*/
-        /*====================================================================*/
-
-        /*====================================================================*/
-        /*photo_session settings*/
-        .logo-title, .logo-subtitle-i-first-letter, .logo-subtitle-ii-first-letter {
-            color: darkorange;
-        }
-
-        .logo {
-            background: rgba(255, 255, 255, 0.5);
-        }
-
-        #photo_session__ostancino {
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
-
-        #photo_session__place {
-            margin-bottom: 10px;
-        }
-
-        .list-group {
-            margin: 0;
-            padding: 0;
-        }
-
-        #photo_session__path__title {
-            margin-top: 10px;
-        }
-
-        /*END photo_session settings*/
-        /*====================================================================*/
-
-        /*====================================================================*/
-        /*footer settings*/
-        #footer {
-            margin-top: 10px;
-            background-color: white;
-        }
-
-        #footer__item {
-            font-size: 2rem;
-        }
-
-        /*END footer settings*/
-        /*====================================================================*/
-
-        /*====================================================================*/
-        /*media settings*/
-        /*END media settings*/
-        /*====================================================================*/
-
-
     </style>
+
 
 </head>
 
@@ -562,15 +233,15 @@
                     <div class="carousel-inner" role="listbox">
 
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid img-thumbnail" src="../static/img/Hamov_001.jpg"
+                            <img class="d-block img-fluid img-thumbnail" src="static/img/Hamov_001.jpg"
                                  alt="Первый слайд">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid img-thumbnail" src="../static/img/Hamov_002.jpg"
+                            <img class="d-block img-fluid img-thumbnail" src="static/img/Hamov_002.jpg"
                                  alt="Второй слайд">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid img-thumbnail" src="../static/img/Hamov_003.jpeg"
+                            <img class="d-block img-fluid img-thumbnail" src="static/img/Hamov_003.jpeg"
                                  alt="Третий слайд">
                         </div>
                     </div>
@@ -703,7 +374,7 @@
         </div>
         <p class="lead">
             <a href="http://www.brh.ru">
-                <img src="../static/img/logo_brighton.svg"
+                <img src="static/img/logo_brighton.svg"
                      class="img-fluid rounded"
                      id="logo_briton">
             </a>
@@ -753,13 +424,13 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block img-fluid img-thumbnail" src="../static/img/Brighton_001.jpg">
+                                    <img class="d-block img-fluid img-thumbnail" src="static/img/Brighton_001.jpg">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block img-fluid img-thumbnail" src="../static/img/Brighton_002.jpg">
+                                    <img class="d-block img-fluid img-thumbnail" src="static/img/Brighton_002.jpg">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block img-fluid img-thumbnail" src="../static/img/Brighton_003.jpg">
+                                    <img class="d-block img-fluid img-thumbnail" src="static/img/Brighton_003.jpg">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#imag_brighton" role="button" data-slide="prev">
@@ -785,7 +456,7 @@
                 <div class="row">
                     <div class="d-flex justify-content-center" id="host_man__img">
                         <div class="col-8 col-sm-6 col-md-4">
-                            <img src="../static/img/host_man.jpg"
+                            <img src="static/img/host_man.jpg"
                                  class="img-fluid">
                             <a href="https://vk.com/pisa_tell" type="button" class="btn-floating btn-lg btn-vk"
                                id="host_man__contact"><i

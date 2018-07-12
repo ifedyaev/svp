@@ -1,13 +1,13 @@
 /*====================================================================*/
 /*Global settings*/
-body {
-    background: url("./index/static/img/tsvety-piony-butony.jpg") #303030 no-repeat center center fixed;
+/*body {
+    background: url(static/img/tsvety-piony-butony.jpg) #303030 no-repeat center center fixed;
     display: table;
     height: 100%;
     width: 100%;
     position: relative;
     background-size: cover;
-}
+}*/
 
 .text_standard {
     font-family: 'Old Standard TT', serif;
@@ -120,10 +120,10 @@ a:hover {
 /*====================================================================*/
 
 /*Font import*/
-@font-face {
+/*@font-face {
     font-family: esenin-script;
-    src: url('./index/static/font/esenin-script-two_[allfont.ru].ttf') format('truetype');
-}
+    src: url(static/font/esenin-script-two_[allfont.ru].ttf) format(truetype);
+}*/
 
 /*END Font import*/
 /*====================================================================*/
