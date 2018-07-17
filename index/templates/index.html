@@ -26,24 +26,29 @@
     <!-- Bootstrap js -->
     <script src="static/js/bootstrap.min.js"></script>
     <style>
-         body {
-             background: url("static/img/tsvety-piony-butony.jpg") #303030 no-repeat center center fixed;
-             display: table;
-             height: 100%;
-             width: 100%;
-             position: relative;
-             background-size: cover;
-         }
-         @font-face {
+        body {
+            background: url("static/img/main_fon.jpg") #303030 no-repeat center center fixed;
+            display: table;
+            min-height: 100%;
+            min-width: 100%;
+            position: relative;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        @font-face {
             font-family: esenin-script;
             src: url('static/font/esenin-script-two_[allfont.ru].ttf') format('truetype');
         }
+        
     </style>
 
 
 </head>
 
-<body class="text_standard">
+<body class="text_standard img-fluid">
 
 <header>
 
@@ -286,33 +291,13 @@
 
         <div class="text-center">
             <h4 class="cover-heading all_title">Фотосессия</h4>
-            <h3 class="all_paragraph">
-                Фотосьемка
-            </h3>
-        </div>
-
-        <div class="col-lg-4 col-10 mx-auto" id="photo_session__ostancino">
-                <div class="logo">
-                    <a class="logo-link">
-                        <div class="logo-title">
-                            Ostankino
-                        </div>
-                        <div class="logo-subtitle">
-                                    <span class="logo-subtitle-i">
-                                    <span class="logo-subtitle-i-first-letter">E</span>ntertainment
-                                    </span>
-                            <span class="logo-subtitle-ii">
-                                    <span class="logo-subtitle-ii-first-letter">C</span>enter
-                                    </span>
-                        </div>
-                    </a>
-                </div>
 
         </div>
+
 
         <div class="text-center" id="photo_session__place">
             <h3 class="all_paragraph">
-                Места для фотосессии
+                Места для съемки
             </h3>
             <div class="d-flex justify-content-center">
                 <div class="list-group list-group-flush col-lg-8 col-sm-10 all_paragraph">
@@ -329,6 +314,30 @@
                 </div>
             </div>
         </div>
+        <div class="text-center">
+            <h3 class="all_paragraph">
+                Фотосъемка
+            </h3>
+        </div>
+
+        <div class="col-lg-4 col-10 mx-auto" id="photo_session__ostancino">
+            <div class="logo">
+                <a class="logo-link">
+                    <div class="logo-title">
+                        Ostankino
+                    </div>
+                    <div class="logo-subtitle">
+                                    <span class="logo-subtitle-i">
+                                    <span class="logo-subtitle-i-first-letter">E</span>ntertainment
+                                    </span>
+                        <span class="logo-subtitle-ii">
+                                    <span class="logo-subtitle-ii-first-letter">C</span>enter
+                                    </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
 
         <div class="d-flex justify-content-center" id="photo_session__path">
 
@@ -480,9 +489,9 @@
                             <ul class="list-group">
                                 <li class="list-group-item active">Стол 1</li>
                                 <li class="list-group-item">Федяев Андрей Викторович</li>
-                                <li class="list-group-item">Федяева Алина Рифорвна</li>
-                                <li class="list-group-item">Галкина Наталья Николаевна</li>
+                                <li class="list-group-item">Федяева Алина Рифовна</li>
                                 <li class="list-group-item">Галкин Александр Александрович</li>
+                                <li class="list-group-item">Галкина Наталья Николаевна</li>
                                 <li class="list-group-item">Ковалёв Юрий</li>
                                 <li class="list-group-item">Ковалёва Наталья</li>
                                 <li class="list-group-item">Мухутдинова Лена</li>
@@ -511,13 +520,13 @@
                                 <li class="list-group-item active">Стол 3</li>
                                 <li class="list-group-item">Галкин Сергей</li>
                                 <li class="list-group-item">Галкина Алёна</li>
-                                <li class="list-group-item">Галкин  Александр</li>
-                                <li class="list-group-item">Алина</li>
+                                <li class="list-group-item">Галкин Александр</li>
+                                <li class="list-group-item">Потапова Алина</li>
                                 <li class="list-group-item">Галкин Роман</li>
                                 <li class="list-group-item">Галкина Анна</li>
                                 <li class="list-group-item">Гордеева Вера</li>
                                 <li class="list-group-item">Гимазова Регина</li>
-                                <li class="list-group-item">Махоткин Алесей</li>
+                                <li class="list-group-item">Махоткин Алексей</li>
                             </ul>
                         </div>
                         <div class="col-sm-6">
