@@ -21,13 +21,12 @@
 
     <link rel="stylesheet" href="static/css/main.css">
 
-    <!-- jQuery -->
-    <script src="static/js/jquery-3.3.1.slim.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="static/js/bootstrap.min.js"></script>
     <style>
+        /*====================================================================*/
+        /*Global settings*/
+
         body {
-            background: url("static/img/main_fon.jpg") #303030 no-repeat center center fixed;
+            background: url("static/img/main_fon.jpg") #FFFAFA no-repeat center center fixed;
             display: table;
             min-height: 100%;
             min-width: 100%;
@@ -40,12 +39,11 @@
 
         @font-face {
             font-family: esenin-script;
-            src: url('static/font/esenin-script-two_[allfont.ru].ttf') format('truetype');
+            src: url("static/font/esenin-script-two_[allfont.ru].ttf") format('truetype');
         }
-        
+
+        /*====================================================================*/
     </style>
-
-
 </head>
 
 <body class="text_standard img-fluid">
@@ -82,6 +80,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#celebrate"><i class="fa fa-glass-martini"></i> Празднование</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cloud"><i class="fa fa-cloud-download-alt"></i> Фотографии с мероприятия</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#footer"><i class="fa fa-info"></i> Контакты</a>
@@ -585,6 +586,46 @@
 
     </div>
 
+    <div class="bl cloud" id="cloud">
+        <div class="h1">
+            <i class="fa fa-cloud-download-alt"></i>
+        </div>
+        <div class="d-flex">
+            <div class="col-10 mx-auto">
+                <div class="text-center">
+                    <h4 class="cover-heading all_title">Загрузить и поделиться со всеми Вашими фотографиями можно:</h4>
+                    <p class="all_paragraph">
+                        Вступив в группу В Контакте:
+                    </p>
+                    <div class="h1">
+                        <a href="https://vk.com/clubigorandolga"><i class="fab fa-vk"></i></a>
+                    </div>
+                    <p class="all_paragraph">
+                        Вступить в группу в WhatsApp:
+                    </p>
+                    <div class="h1">
+                        <a href="https://chat.whatsapp.com/3TDqge2oNhmHqSIB8jF6q1"><i
+                                class="fab fa-whatsapp-square"></i></a>
+                    </div>
+                    <p class="all_paragraph">
+                        Можно залить в файлообменник от Google Drive:
+                    </p>
+                    <div class="h1">
+                        <a href="https://drive.google.com/open?id=1DNJgPLfagAzI4RD2-ZfMI9Pp6hjsHzFg"><i
+                                class="fab fa-google-drive"></i></a>
+                    </div>
+                    <p class="all_paragraph">
+                        Вы можете оставить ваши предложения об открытии нового контента по обмену файлами в выше
+                        предолженных группах - мы их обязательно рассмотрим
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </main>
 
 <!-- Footer -->
@@ -679,5 +720,9 @@
 <!-- Footer -->
 
 </body>
+<!-- jQuery -->
+<script src="static/js/jquery-3.3.1.slim.min.js"></script>
+<!-- Bootstrap js -->
+<script src="static/js/bootstrap.min.js"></script>
 
 </html>

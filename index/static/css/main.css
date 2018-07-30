@@ -1,6 +1,36 @@
-/*====================================================================*/
-/*Global settings*/
 
+/*====================================================================*/
+/*media settings*/
+
+@media (max-width: 576px) {
+    .h3 {
+        font-size: 1.2rem;
+    }
+
+    #greeting_welcome {
+        font-size: 3rem;
+    }
+
+    #greeting__text__dear {
+        font-size: 1.8rem;
+    }
+
+    .all_title {
+        font-size: 1.6rem;
+    }
+
+    .carousel-item {
+        height: 15rem;
+    }
+
+    .carousel-item > img {
+        height: 15rem;
+    }
+
+}
+
+/*END media settings*/
+/*====================================================================*/
 .text_standard {
     font-family: 'Old Standard TT', serif;
 }
@@ -26,7 +56,6 @@ a:hover {
 .all_paragraph {
     font-size: 1.2rem;
 }
-
 
 .carousel-item {
     height: 20rem;
@@ -238,47 +267,10 @@ a:hover {
 /*END furshet settings*/
 /*====================================================================*/
 /*====================================================================*/
-/*media settings*/
-
-@media (max-width: 576px) {
-    .h3 {
-        font-size: 1.2rem;
-    }
-
-    #greeting_welcome {
-        font-size: 3rem;
-    }
-
-    #greeting__text__dear {
-        font-size: 1.8rem;
-    }
-
-    .all_title {
-        font-size: 1.6rem;
-    }
-
-    .carousel-item {
-        height: 15rem;
-    }
-
-    .carousel-item > img {
-        height: 15rem;
-    }
-}
-
-@media (max-width: 576px) {
-
-}
-
-/*END media settings*/
-/*====================================================================*/
-
-/*====================================================================*/
 /*photo_session settings*/
 .logo-title, .logo-subtitle-i-first-letter, .logo-subtitle-ii-first-letter {
     color: darkorange;
 }
-
 
 #photo_session__ostancino {
     margin-top: 10px;
@@ -300,7 +292,12 @@ a:hover {
 
 /*END photo_session settings*/
 /*====================================================================*/
+/* cloud*/
+#cloud {
+    margin-top: 40px;
+}
 
+/* END cloud settings*/
 /*====================================================================*/
 /*footer settings*/
 #footer {
